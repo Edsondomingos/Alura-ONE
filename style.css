@@ -1,0 +1,37 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	background-color: #000;
+	height: 50px;
+	color: aqua;
+	font-family: cursive;
+}
+
+main {
+	border: 1px solid black;
+	width: 50%;
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+a {
+	font-size: 20px;
+	background-color: #00a;
+	color: #fff;
+	font-family: Arial;
+}
+
+a:hover {
+	background-color: #000;
+	color: aqua;
+}
+
+footer {
+	text-align: center;
+	margin-top: 20px;
+}
