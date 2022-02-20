@@ -66,26 +66,30 @@ Não permite acentuação
 
 descripto.addEventListener('click', e => {
 	e.preventDefault();
-	let novaMsg = entrada.value;
-	
-	if (novaMsg.indexOf('imes') != -1){
-		novaMsg = novaMsg.replace(/imes/g,'i');
-	}
-	if (novaMsg.indexOf('ai') != -1){
-		novaMsg = novaMsg.replace(/ai/g,'a');
-	} 
-	if (novaMsg.indexOf('enter') != -1){
-		novaMsg = novaMsg.replace(/enter/g,'e');
-	} 
-	if (novaMsg.indexOf('ober') != -1){
-		novaMsg = novaMsg.replace(/ober/g,'o');
-	} 
-	if (novaMsg.indexOf('ufat') != -1){
-		novaMsg = novaMsg.replace(/ufat/g,'u');
-	}
+	let regex = new RegExp('^[a-z]+$');
+	if (!regex.test(entrada.value)){
+		document.querySelector('label').style.backgroundColor = 'red';
+	} else {
+		let novaMsg = entrada.value;
+		
+		if (novaMsg.indexOf('imes') != -1){
+			novaMsg = novaMsg.replace(/imes/g,'i');
+		}
+		if (novaMsg.indexOf('ai') != -1){
+			novaMsg = novaMsg.replace(/ai/g,'a');
+		} 
+		if (novaMsg.indexOf('enter') != -1){
+			novaMsg = novaMsg.replace(/enter/g,'e');
+		} 
+		if (novaMsg.indexOf('ober') != -1){
+			novaMsg = novaMsg.replace(/ober/g,'o');
+		} 
+		if (novaMsg.indexOf('ufat') != -1){
+			novaMsg = novaMsg.replace(/ufat/g,'u');
+		}
 
-	msg.value = novaMsg;
-
+		msg.value = novaMsg;
+	}
 })
 
 let copiar = document.querySelector('#btn-copy');
