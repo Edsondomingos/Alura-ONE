@@ -21,7 +21,7 @@ let msg = document.querySelector('#msg');
 cripto.addEventListener('click', e =>{
 	e.preventDefault();
 	let novaMsg = '';
-	let regex = new RegExp('^[a-z]+$');
+	let regex = new RegExp('^[a-z_ ]+$');
 	if (!regex.test(entrada.value)){
 		document.querySelector('label').style.backgroundColor = 'red';
 	} else{
