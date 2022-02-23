@@ -70,6 +70,8 @@ descripto.addEventListener('click', e => {
 	if (!regex.test(entrada.value)){
 		document.querySelector('label').style.backgroundColor = 'red';
 	} else {
+		document.querySelector('label').style.backgroundColor = 'white';
+		
 		let novaMsg = entrada.value;
 		
 		if (novaMsg.indexOf('imes') != -1){
