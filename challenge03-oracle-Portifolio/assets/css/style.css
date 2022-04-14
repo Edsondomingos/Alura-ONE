@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+:root {
+    --azul_claro: #EAF2FD;
+    --branco:#ffffff;
+}
+
+body {
+    background: #F5F5F5;
+    font-family: 'Raleway';
+}
+
+.container {
+    box-sizing: border-box;
+    margin: auto;
+}

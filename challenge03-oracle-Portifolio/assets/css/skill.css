@@ -1,0 +1,146 @@
+.area-pessoal {
+    /* width: 100%; */
+    box-sizing: border-box;
+}
+
+.area-pessoal__skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 88px 0px;
+}
+
+.area-pessoal__skills-titulo {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 32px 0px;
+}
+
+.area-pessoal__skills-detalhes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px 0px;
+}
+
+.detalhe-individual {
+    background: #ffffff;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 174px;
+    margin: 5px 16px;
+    justify-content: flex-end;
+    padding: 16px;
+    width: 176px;
+    box-sizing: border-box;
+}
+
+.html {
+    background-image: url(../imgs/html.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+}
+
+.css {
+    background-image: url(../imgs/css.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+}
+
+.js {
+    background-image: url(../imgs/js.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+}
+
+.type {
+    background-image: url(../imgs/typescript.png);
+    background-repeat: no-repeat;
+    padding: 30px 0px 0px;
+    width: 28px;
+    height: 37px
+}
+
+.php {
+    background-image: url(../imgs/php.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+    width: 28px;
+    height: 37px;
+}
+
+.python {
+    background-image: url(../imgs/python.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+    width: 50px;
+    height: 37px;
+}
+
+.estudar {
+    background-image: url(../imgs/estudar.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+}
+
+.ouvir {
+    background-image: url(../imgs/headset.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+}
+
+.assistir {
+    background-image: url(../imgs/tv.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+}
+
+.jopar {
+    background-image: url(../imgs/jogar.png);
+    background-repeat: no-repeat;
+    padding: 30px 0px 0px;
+    width: 28px;
+    height: 37px
+}
+
+.andar {
+    background-image: url(../imgs/andar.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+    width: 28px;
+    height: 37px;
+}
+
+.familia {
+    background-image: url(../imgs/familia.png);
+    background-repeat: no-repeat;
+    padding: 40px 0px 0px;
+    width: 50px;
+    height: 37px;
+}
+
+@media screen and (max-width: 768px) {
+    .area-pessoal__skills-titulo {
+        font-size: 22px;
+    }
+
+    .area-pessoal__skills-detalhes {
+        
+        justify-content: center;
+    }
+
+    .detalhe-individual {
+        width: 156px;
+        margin: 7px 16px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .detalhe-individual {
+        width: 40%;
+        font-size: 16px;
+    }
+}
+

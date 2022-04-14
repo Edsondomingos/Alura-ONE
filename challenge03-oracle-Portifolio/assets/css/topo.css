@@ -1,0 +1,83 @@
+.topo {
+    /* position: sticky; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 32px 0px;
+    width: 90%;
+    
+}
+
+.topo__logo {
+    margin: 0px 10px;
+    padding: 0px 1.5rem;
+}
+
+.topo__logo-icons {
+    background-image: url('../imgs/estrela.png');
+    background-repeat: no-repeat;
+}
+
+.topo__links {
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-weight: 500;   
+    margin: 0px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 642px;
+}
+
+.negrito {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #464646;
+    padding: 5px 5px;
+}
+
+@media screen and (max-width: 768px){
+    .topo {
+        width: 90%;
+        box-sizing: border-box;
+        align-items: flex-end;
+    }
+    
+    .topo__links {
+        visibility: hidden;
+        /* /* display: none; */
+        align-items: center;
+    }
+    
+    .negrito {
+        visibility: visible;
+    }
+
+    
+}
+
+@media screen and (max-width: 360px){
+    .topo {
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        height: 50px;
+        font-size: 12px;
+        
+    }
+
+    .topo__links {
+        padding: 0;
+    }
+    .negrito {
+        font-size: 0.5rem;
+    }
+
+
+}

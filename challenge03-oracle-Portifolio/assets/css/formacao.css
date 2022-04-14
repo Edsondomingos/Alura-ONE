@@ -1,0 +1,111 @@
+.area-pessoal-formacao {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--azul_claro);
+    margin: 88px 0px;
+    padding: 82px;
+    box-sizing: border-box;
+}
+
+.area-pessoal-formacao__titulo {
+    color: #464646;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    margin: 32px 0px;
+    text-align: center;
+}
+
+.area-pessoal-formacao__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 32px 0px;    
+    flex-shrink: 2;
+}
+
+.area-pessoal-formacao__info-detalhe {
+    height: 347px;
+    margin: 10px 10px;
+    width: 310px;
+    box-sizing: border-box;
+}
+
+.area-pessoal-formacao__info-detalhe p:nth-child(2n) {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.area-pessoal-formacao__info-detalhe-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    height: 286px;
+    margin: 8px 0px;
+    padding: 16px;
+    width: 70%;
+    
+}
+
+.img-instituicao {
+    width: 12em;
+    height: auto;
+    
+}
+
+@media screen and (max-width: 768px){
+    .area-pessoal-formacao {
+        font-size: 16px;
+    }
+    .area-pessoal-formacao__info {
+        flex-wrap: nowrap;
+        
+    }
+
+    .area-pessoal-formacao__info-detalhe {
+        width: 180px;
+        margin: 0px 2px;
+        
+    }
+
+    .area-pessoal-formacao__info-detalhe-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .img-instituicao {
+        width: 75px;
+        height: 110px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .area-pessoal-formacao__info-detalhe {
+        width: 200px;
+        height: 118px;
+        font-size: 10px;   
+        margin: 25px;   
+    }
+
+    .area-pessoal-formacao__info {
+        flex-wrap: wrap;
+        
+    }
+
+    .area-pessoal-formacao__info-detalhe-img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .img-instituicao {
+        width: 75px;
+        height: 110px;
+    }
+
+    .area-pessoal-formacao__info-detalhe p:nth-child(2n) {
+        font-size: 10px;
+    }
+}
