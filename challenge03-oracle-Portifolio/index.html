@@ -180,19 +180,19 @@
                         </header>
                         <p class="rodape__contato-centro-formulario-input">
                             <label for="nome">Nome</label><br/>
-                            <input type="text" name="nome" id="nome" placeholder="Edson Domingos" required>
+                            <input type="text" name="nome" id="nome" placeholder="Edson Domingos" maxlength="50" title="Digite seu nome">
                         </p>
                         <p class="rodape__contato-centro-formulario-input">
                             <label for="email">E-mail</label><br/>
-                            <input  type="email" name="email" id="email" placeholder="nome@email.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <input  type="email" name="email" id="email" placeholder="nome@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                         </p>
                         <p  class="rodape__contato-centro-formulario-input">
-                            <input type="text" placeholder="Assunto" required>
+                            <input type="text" placeholder="Assunto" required id="assunto" maxlength="50">
                         </p>
                         <p>
-                            <textarea class="rodape__contato-centro-formulario-input msg" name="" id="" cols="30" rows="10" placeholder="Mensagem" required minlength="10"></textarea><br/>
+                            <textarea class="rodape__contato-centro-formulario-input msg" name="msg" id="msg" cols="30" rows="10" placeholder="Mensagem" minlength="10" maxlength="300"></textarea><br/>
                         </p>
-                        <button type="submit" class="rodape__contato-centro-formulario-botao">Enviar Mensagem</button>
+                        <button type="submit" data-submit class="rodape__contato-centro-formulario-botao">Enviar Mensagem</button>
                     </form>
                 </article>
             </section>
