@@ -21,7 +21,7 @@ let msg = document.querySelector('#msg');
 cripto.addEventListener('click', e =>{
 	e.preventDefault();
 	let novaMsg = '';
-	let regex = new RegExp('^[a-z]+$');
+	let regex = new RegExp('^[a-z_ ]+$');
 	if (!regex.test(entrada.value)){
 		document.querySelector('label').style.backgroundColor = 'red';
 	} else{
@@ -66,10 +66,12 @@ Não permite acentuação
 
 descripto.addEventListener('click', e => {
 	e.preventDefault();
-	let regex = new RegExp('^[a-z]+$');
+	let regex = new RegExp('^[a-z_ ]+$');
 	if (!regex.test(entrada.value)){
 		document.querySelector('label').style.backgroundColor = 'red';
 	} else {
+		document.querySelector('label').style.backgroundColor = 'white';
+		
 		let novaMsg = entrada.value;
 		
 		if (novaMsg.indexOf('imes') != -1){
