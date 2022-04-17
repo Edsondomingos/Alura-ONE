@@ -4,8 +4,14 @@ let inputNovaPalavra = document.querySelector('#input-nova-palavra')
 let btAddNovaPalavra = document.querySelector('#nova-palavra')
 let letras = 'ABCDFEGHIJKLMNOPQRSTUVWXYZ'
 let div = document.querySelector('.div-forca')
+let p = document.querySelector('#aviso')
+let regex = new RegExp('^[A-Za-z]+$')
 
 div.style.display = 'none'
+
+p.style.color = 'red'
+p.style.fontFamily = 'Arial'
+p.style.fontSize = '20px'
 
 //  Adiciona palavra ao localStore
 if (!localStorage.getItem('palavras')){
@@ -14,13 +20,23 @@ if (!localStorage.getItem('palavras')){
 
 let sugestaoPalavra = JSON.parse(localStorage.getItem('palavras'))
 
+inputNovaPalavra.addEventListener('focus', function(event){
+    div.style.display = 'none'
+})
 
 btAddNovaPalavra.addEventListener('click', e => {
-    if (inputNovaPalavra.value != ''){    
+    
+    if(!regex.test(inputNovaPalavra.value)){        
+        p.textContent = 'Digite apenas letras'
+    } else {
+        p.textContent = ''
+        // if (inputNovaPalavra.value != ''){    
         sugestaoPalavra.push(inputNovaPalavra.value.toUpperCase())
         localStorage.setItem('palavras',JSON.stringify(sugestaoPalavra))
         inputNovaPalavra.value = ''
+        // }
     }
+    
 })
 
 //  Cria os botões na tela(teclado virtual)
@@ -145,45 +161,45 @@ button.forEach(e => e.addEventListener('click', function(){
  
 // Botoes do teclado
 document.querySelector('body').addEventListener('keydown', function(event) { 
-    event.key.disabled = true
-    button.forEach(e => {
-        if (e.textContent == event.key.toUpperCase()){
-           e.disabled = true
-        }
-        
-    })
-    
-    arrLetra.forEach((letra,indice) =>{
-        if(arrLetra[indice] == event.key.toUpperCase()){            
-            troca_Letra(indice,letra)
-        }
-    })
-    
+    let tecla = event.key
     if(
-        palavraEscolhida.indexOf(event.key.toUpperCase()) == -1 &&
-        letraDigitada.indexOf(event.key.toUpperCase()) == -1
-    ){                
-        if(contErros <= 6){
-            erros[contErros]()
+        regex.test(tecla) && tecla != 'CapsLock' && tecla != 'Shift' && 
+        tecla != 'Tab' && tecla != 'Control' && tecla != 'Meta' && tecla != 'Alt' &&
+        tecla != 'AltGraph' && tecla != 'ContextMenu' && tecla != 'Backspace'
+    ){
+        button.forEach(e => {
+            if (e.textContent == event.key.toUpperCase()){
+                e.disabled = true
+            }
             
-            letraDigitada.push(event.key.toUpperCase())
-            letrasDigitadas()
-                     
-        } 
-        if (contErros == 6) {
-            desabilitaTodosBotoes()
-            pincel.fillStyle = 'red'
-            pincel.font= '50px cursive'
-            let certa = 'A palavra era ' + palavraEscolhida
-            pincel.fillText(certa,450,200)            
+        })
+        
+        arrLetra.forEach((letra,indice) =>{
+            if(arrLetra[indice] == event.key.toUpperCase()){            
+                troca_Letra(indice,letra)
+            }
+        })
+        
+        if(
+            palavraEscolhida.indexOf(event.key.toUpperCase()) == -1 &&
+            letraDigitada.indexOf(event.key.toUpperCase()) == -1
+        ){                
+            if(contErros <= 6){
+                erros[contErros]()
+                
+                letraDigitada.push(event.key.toUpperCase())
+                letrasDigitadas()
+                        
+            } 
+            if (contErros == 6) {
+                desabilitaTodosBotoes()
+                pincel.fillStyle = 'red'
+                pincel.font= '50px cursive'
+                let certa = 'A palavra era ' + palavraEscolhida
+                pincel.fillText(certa,450,200)            
+            }
+            contErros++
         }
-        contErros++
     }
-    
 })
 
-
-
-inputNovaPalavra.addEventListener('focus', function(event){
-    div.style.display = 'none'
-})
