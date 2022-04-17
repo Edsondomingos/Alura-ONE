@@ -75,7 +75,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 656px) {
     .hero {
         flex-direction: column-reverse;
     }
@@ -101,5 +101,10 @@
     .hero__detalhes-links-seta {
         padding: 0px 15px;
     
+    }
+
+    .hero__foto {
+        width: 170px;
+        height: 170px;
     }
 }

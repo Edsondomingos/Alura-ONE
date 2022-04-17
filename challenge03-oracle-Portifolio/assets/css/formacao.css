@@ -82,7 +82,7 @@
     }
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 650px){
     .area-pessoal-formacao__info-detalhe {
         width: 200px;
         height: 118px;
