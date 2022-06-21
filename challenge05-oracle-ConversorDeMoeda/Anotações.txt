@@ -1,0 +1,19 @@
+//awt ja veio com o java
+import java.awt.*; //antes do swing
+//Descontinuada ate java 9. - x(extends) do javax diz que estende
+import javax.swing.*; 
+//JFX - interfaces para tudo, desde 2008, atualemnte mantida por openJFX. swing apenas para janelas
+//Instala como plugin, de forma diferente dos imports
+
+
+
+Estrutura Hierarquica
+
+java.lang.Object - java.awt.Component - java.awt.Container - javax.swing.JComponent
+
+JOptionPane
+- classe
+- Pacote javax.swing.JOptionPane
+- interface gráfica básica - caixas de dialogo
+
+
