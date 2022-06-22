@@ -17,3 +17,14 @@ JOptionPane
 - interface gráfica básica - caixas de dialogo
 
 
+// 4 argumentos no showInput Dialog()
+    	// 1 - De qual frame é dependente, se não há, coloca null
+    	// 2 - Mensagem Exibida
+    	// 3 - Titulo da caixa
+    	// 4 - Tipo qual tipo de icone na mensagem, definido pelas constantes ou pelos inteiros que as representão
+		//    	PLAIN_MESSAGE (valor: -1): Mensagem limpa, sem nenhum ícone.
+		//    	ERROR_MESSAGE (valor: 0): Mensagem de erro.
+		//    	INFORMATION_MESSAGE (valor: 1): Mensagem informativa.
+		//    	WARNING_MESSAGE (valor: 2): Mensagem de alerta.
+		//    	QUESTION_MESSAGE (valor: 3): Mensagem de requisição ou pergunta.
+
