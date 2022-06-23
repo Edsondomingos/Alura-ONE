@@ -1,0 +1,42 @@
+.topo {
+    /* background: #ffffff; */
+    
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 72px;
+    padding: 16px;
+}
+
+.logo {
+    /* background-image: url('../imgs/icons/Logo.png'); */
+    width: 100px;
+}
+
+.banner {
+    background: black url('../imgs/anime.jpg') no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 192px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* filter: drop-shadow(5px 5px 5px #111); */
+    font-weight: bolder;
+    /* background-color: rgba(0, 0, 0, 0.167); */
+    /* filter: opacity(50%); */
+}
+
+/* Provisorio */
+.info-promo {
+    background: #000;
+    width: max-content;
+    line-height: 25px;
+}
+
+.banner h1 {
+    font-weight: 700;
+    font-size: 22px;
+}

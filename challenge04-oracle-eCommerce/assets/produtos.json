@@ -1,0 +1,57 @@
+{
+    "produtos":[
+        {
+            "Star Wars":[{
+                "imgP": "./assets/imgs/produtos/p1.png",
+                "imgG": "./assets/imgs/produtos/p1g.png",
+                "nome":"XYZ",
+                "preco":60,
+                "descricao":"Descricao",
+                "id": 1
+            },
+            {
+                "imgP": "./assets/imgs/produtos/p2.png",
+                "imgG": "./assets/imgs/produtos/p2g.png",
+                "nome":"XYZ",
+                "preco":60,
+                "id": 2
+            },
+            {
+                "imgP": "./assets/imgs/produtos/p3.png",
+                "imgG": "../assets/imgs/produtos/p3g.png",
+                "nome":"XYZ",
+                "preco":60,
+                "descricao":"Descricao",
+                "id": 3
+            },
+            {
+                "imgP": "./assets/imgs/produtos/p4.png",
+                "imgG": "./assets/imgs/produtos/p4g.png",
+                "nome":"XYZ",
+                "preco":60,
+                "descricao":"Descricao",
+                "id": 4
+            },
+            {
+                "imgP": "../assets/imgs/produtos/p5.png",
+                "imgG": "./assets/imgs/produtos/p5g.png",
+                "nome":"XYZ",
+                "preco":60,
+                "descricao":"Descricao",
+                "id": 5
+            },
+            {
+                "imgP": "./assets/imgs/produtos/p6.png",
+                "imgG": "./assets/imgs/produtos/p6g.png",
+                "nome":"XYZ",
+                "preco":60,
+                "descricao":"Descricao",
+                "id": 6
+            }],
+            "console":[{
+
+            }]
+        }
+        
+    ]
+}

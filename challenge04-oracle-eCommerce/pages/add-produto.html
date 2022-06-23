@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/topo.css">
+    <link rel="stylesheet" href="../assets/css/linha.css">
+    <link rel="stylesheet" href="../assets/css/rodape.css">
+    <link rel="stylesheet" href="../assets/css/add-produto.css">
+</head>
+<body>
+
+    <header class="topo">
+        <img src="../assets/imgs/icons/Logo.png" class="logo">
+        <a href="./pages/login.html" class="botao_login">Login</a>
+        <img src="../assets/imgs/icons/lupa.png" alt="" class="galeria_linha-figuras-img">
+    </header>
+
+    <main class="add-produto">
+        <form class="add-produto_formulario" enctype="multipart/form-data">
+            <h2 class="add-produto_formulario-titulo">Adicionar novo produto</h2>
+            <p class="">
+                <label for="img">
+                    <img src="../assets/imgs/add-img.png" alt="" class="add-produto_formulario-paragrafo-img">
+                </label>
+                <input type="file" id="img" class="invisivel">
+            </p>
+            <p class="add-produto_formulario-paragrafo">
+                <label for="nome-produto">Nome do produto</label>
+                <input class="add-produto_formulario-paragrafo-input" type="text" id="nome-produto" placeholder="Produto XYZ">
+            </p>
+            <p class="add-produto_formulario-paragrafo">
+                <label for="preco-produto">Preço do produto</label>
+                <input class="add-produto_formulario-paragrafo-input" type="number" id="preco-produto" step="0.01" placeholder="R$ 60,00">
+            </p>
+            <textarea id="" cols="10" rows="5" placeholder="Descrição do produto" class="input_formulario-msg"></textarea>
+            <button type="submit" class="botao-add-produto">Adicionar produto</button>
+            
+        </form>
+    </main>
+
+    <section class="footer">
+        <div class="footer_conteudo">
+            <section class="footer_conteudo-esquerda">
+                <a href="">Quem somos nós</a><br/>
+                <a href="">Política de privacidade</a><br/>
+                <a href="">Programa fidelidade</a><br/>
+                <a href="">Nossas lojas</a><br/>
+                <a href="">Quero ser franqueado</a><br/>
+                <a href="">Anuncie aqui</a><br/>
+            </section>
+            <section class="footer_conteudo-contato">                
+                <form action="" class="footer_conteudo-contato-formulario">
+                    <h3>Fale conosco</h3>
+                    <p class="add-produto_formulario-paragrafo">
+                        <label for="nome-form">Nome</label>
+                        <input type="text" class="add-produto_formulario-paragrafo-input" id="nome-form">
+                    </p>
+                    <textarea type="text" class="input_formulario-msg" cols="10" rows="5" placeholder="Escreva sua mensagem"></textarea>
+                    <button class="botao">Enviar mensagem</button>
+                </form>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/edson-domingos">Edson Domingos</a></p>
+        <p>2022</p>
+    </footer>
+    <script type="text/javascript" src="../assets/js/add-produto.js"></script>
+</body>
+</html>

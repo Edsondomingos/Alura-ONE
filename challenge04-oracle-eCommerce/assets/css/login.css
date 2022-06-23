@@ -1,0 +1,23 @@
+.login {
+    background: #eee;
+}
+
+.login_formulario {
+    width: 275px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.login_formulario-titulo {
+    font-weight: 700;
+}
+
+.input_formulario-login {
+    width: 100%;
+    height: 41px;
+    margin: 16px 0px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}

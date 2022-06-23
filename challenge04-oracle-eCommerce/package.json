@@ -1,0 +1,14 @@
+{
+  "name": "semana-07-a-12---e-commerce-alura-geek",
+  "version": "1.0.0",
+  "description": "Alura Geek",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon --exec node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

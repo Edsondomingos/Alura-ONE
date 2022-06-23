@@ -1,0 +1,33 @@
+.produto {
+
+}
+
+.produto__img {
+    width: 368px;
+}
+
+.produto__info {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px auto;
+}
+
+.produto__info-nome {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 8px 0px;
+}
+
+.produto__info-preco {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 8px 0px;
+}
+
+.produto__info-detalhes {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 8px 0px;
+}

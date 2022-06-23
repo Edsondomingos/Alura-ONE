@@ -1,0 +1,54 @@
+.footer {
+    background:#EAF2FD ;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.footer_conteudo {
+    width: 328px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 521px; */
+    margin: 16px 0px;
+}
+
+.footer_conteudo-esquerda {
+    height: 260px;
+    margin: 32px 0px;
+    background-image: url('../imgs/icons/Logo.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+    padding-top: 50px;
+    text-align: center;
+    /* width: 328px; */
+    /* background: red; */
+    box-sizing: border-box;
+    
+}
+
+.footer_conteudo-esquerda a {
+    color: #000000;
+    font-weight: normal;
+}
+
+.footer_conteudo-contato {
+    /* height: 400px; */
+    margin: 32px 0px;
+    width: 328px;
+    
+    
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 102px;
+    padding: 32px;
+}

@@ -1,0 +1,18 @@
+Ver como fazer para arrastar a imagem para adicionar.
+
+outline: 0; tira a borda preta ao clicar no input
+
+bloquear acessos a pagina se não estiver logado
+
+Deixar dinamica a pagina
+
+Login:
+Colocar regex e mais validação no formulario
+
+add-produto:
+colocar botao procurar no coputador para telas tablet e pc
+
+Dica:
+Deixar o texto na mesma caixa e mudar apenas no css
+text-transform: uppercase;
+localStorage.setItem('auth', JSON.stringify(autenticacao))
