@@ -2,11 +2,11 @@
 
 // add-produto
 
-let formProduto = document.querySelector('.add-produto_formulario')
+let formProduto = document.querySelector('#add-produto_formulario')
 
 let nomeProduto = document.querySelector('#nome-produto')
 let precoProduto = document.querySelector('#preco-produto')
-let descricaoProduto = document.querySelector('.input_formulario-msg')
+let descricaoProduto = document.querySelector('#descricao')
 
 function validaContato(){
     // if (!nomeProduto.checkValidity()){  //Valida segundo as opções do html
@@ -44,9 +44,9 @@ function add_produto(){
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            nome:nomeProduto,
-            preco: precoProduto,
-            descricao: descricaoProduto
+            nome:nomeProduto.value,
+            preco: precoProduto.value,
+            // descricao: descricaoProduto.target.value
         })
     }).then(resposta => {
         if(resposta.ok){
@@ -73,8 +73,11 @@ formProduto.addEventListener('submit', e => {
     e.preventDefault()
     // validaContato()
     add_produto()
-    nomeProduto.value = ''
-    precoProduto.value = ''
-    descricaoProduto.value = ''
+    // nomeProduto.value = ''
+    // precoProduto.value = ''
+    // descricaoProduto.value = ''
+    console.log(nomeProduto.value)
+    console.log(precoProduto.value)
+    console.log(descricaoProduto.value)
 })
 

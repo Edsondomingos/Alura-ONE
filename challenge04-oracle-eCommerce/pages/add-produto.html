@@ -21,7 +21,7 @@
     </header>
 
     <main class="add-produto">
-        <form class="add-produto_formulario" enctype="multipart/form-data">
+        <form class="add-produto_formulario" id="add-produto_formulario" enctype="multipart/form-data">
             <h2 class="add-produto_formulario-titulo">Adicionar novo produto</h2>
             <p class="">
                 <label for="img">
@@ -37,7 +37,7 @@
                 <label for="preco-produto">Preço do produto</label>
                 <input class="add-produto_formulario-paragrafo-input" type="number" id="preco-produto" step="0.01" placeholder="R$ 60,00">
             </p>
-            <textarea id="" cols="10" rows="5" placeholder="Descrição do produto" class="input_formulario-msg"></textarea>
+            <textarea id="descricao" cols="10" rows="5" placeholder="Descrição do produto" class="input_formulario-msg"></textarea>
             <button type="submit" class="botao-add-produto">Adicionar produto</button>
             
         </form>

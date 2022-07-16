@@ -43,7 +43,7 @@ fetch(url)
             for(let i = 0; i < info.length; i++){
                 let nomeSecao = Object.keys(produtos.produtos[0])[i]
                 criaSecao(nomeSecao)
-                // console.log(Object.values(Object.keys(produtos.produtos[0])))
+                console.log(Object.values(Object.keys(produtos.produtos[0])))
                 
                 for(let j = 0; j < info[i].length; j++){
                     // console.log(info[i][j])

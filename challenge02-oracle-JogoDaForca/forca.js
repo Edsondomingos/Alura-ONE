@@ -57,7 +57,7 @@ let letraDigitada = []
 let arrLetra = palavraEscolhida.split('')
 
 iniciarJogo.addEventListener('click', function(){
-    window.location.href = 'https://edsondomingos.github.io/Alura/challenge02-oracle-JogoDaForca/index.html#forca'
+    window.location.href = 'https://edsondomingos.github.io/Alura-ONE/challenge02-oracle-JogoDaForca/index.html#forca'
     telaPrincipal() // tela inicial da forca
     div.style.display = 'block'
     div.style.margin = 'auto'
